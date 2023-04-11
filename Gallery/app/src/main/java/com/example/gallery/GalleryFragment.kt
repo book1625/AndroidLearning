@@ -18,12 +18,12 @@ class GalleryFragment : Fragment() {
 
     private val viewModel by viewModels<GalleryViewModel>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        //被上面那個神奇的寫法取代了…
-        //viewModel = ViewModelProvider(this)[GalleryViewModel::class.java]
-    }
+    //    override fun onCreate(savedInstanceState: Bundle?) {
+    //        super.onCreate(savedInstanceState)
+    //
+    //        //被上面那個神奇的寫法取代了…
+    //        //viewModel = ViewModelProvider(this)[GalleryViewModel::class.java]
+    //    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
