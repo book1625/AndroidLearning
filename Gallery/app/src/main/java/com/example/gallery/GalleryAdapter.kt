@@ -33,7 +33,7 @@ class GalleryAdapter : PagedListAdapter<PhotoItem, CellViewHolder>(PhotoItemDiff
         itemView.setOnClickListener {
 
             //拿到當前 holder 所連結的 data item
-            val item = getItem(holder.bindingAdapterPosition)
+            //val item = getItem(holder.bindingAdapterPosition)
 
             val bundle = Bundle()
             bundle.apply {
