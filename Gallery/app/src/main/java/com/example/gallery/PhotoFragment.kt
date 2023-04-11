@@ -44,7 +44,7 @@ class PhotoFragment : Fragment() {
         })
 
         //指定到想要的頁，不帶滑頁特效，帶的話有時沒換頁
-        val index = arguments?.getInt("index");
+        val index = arguments?.getInt("index")
         Log.d(logTag, "index:${index} ")
         binding.photoPager.setCurrentItem(index ?: 0, false)
 

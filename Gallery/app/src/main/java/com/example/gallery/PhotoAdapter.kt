@@ -38,7 +38,7 @@ class PhotoAdapter : ListAdapter<PhotoItem, PhotoViewHolder>(PhotoItemDiffCallba
         val photo = getItem(position)
 
         //產生顯示資訊
-        holder.size.text = "${photo.imageWidth} * ${photo.imageHeight}"
+        "${photo.imageWidth} * ${photo.imageHeight}".also { holder.size.text = it }
         holder.likes.text = "${photo.likes}"
 
         //這裡要 glide 圖進來
